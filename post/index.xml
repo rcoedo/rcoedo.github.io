@@ -27,13 +27,13 @@ larger amount of requests per second than their dynamic counterpart.&lt;/p&gt;
 &lt;p&gt;A blog usually fits the static site description perfectly. Just having a bunch of html, css and javascript files is an elegant and simple solution.
 But you may ask, won&amp;rsquo;t be handling the content a mess?  It won&amp;rsquo;t, I promise!&lt;/p&gt;
 
-&lt;h2 id=&#34;enter-static-site-generators:323399aa7f615d16192903ed2560cafe&#34;&gt;Enter static site generators&lt;/h2&gt;
+&lt;h2 id=&#34;enter-static-site-generators&#34;&gt;Enter static site generators&lt;/h2&gt;
 
 &lt;p&gt;A static site generator is a tool that renders content into html, css and javascript. The content is usually written in markdown and contains
 some metadata like dates, title or categories. The workflow to make a new post is quite simple, just throw in a new markdown file in the right place,
 rebuild your site, and deploy it to your server.&lt;/p&gt;
 
-&lt;h2 id=&#34;hugo-as-our-static-blog-generator:323399aa7f615d16192903ed2560cafe&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt; as our static blog generator&lt;/h2&gt;
+&lt;h2 id=&#34;hugo-as-our-static-blog-generator&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt; as our static blog generator&lt;/h2&gt;
 
 &lt;p&gt;After trying out some static site generators for this blog, I ended up with &lt;a href=&#34;https://gohugo.io/&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt;. &lt;em&gt;Hugo&lt;/em&gt; is a really &lt;strong&gt;fast&lt;/strong&gt;
 static site generator written in &lt;em&gt;golang&lt;/em&gt;, and it&amp;rsquo;s also a quite simple tool to get started with.&lt;/p&gt;
@@ -41,7 +41,7 @@ static site generator written in &lt;em&gt;golang&lt;/em&gt;, and it&amp;rsquo;s
 &lt;p&gt;If you use homebrew type &lt;code&gt;brew install hugo&lt;/code&gt; to install it. You can find a more detailed guide about installing &lt;em&gt;Hugo&lt;/em&gt;
 &lt;a href=&#34;https://gohugo.io/overview/installing/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;making-our-first-blog-with-hugo:323399aa7f615d16192903ed2560cafe&#34;&gt;Making our first blog with &lt;em&gt;Hugo&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;making-our-first-blog-with-hugo&#34;&gt;Making our first blog with &lt;em&gt;Hugo&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;Ok, let&amp;rsquo;s make a blog from scratch to get you introduced. First we need to tell &lt;em&gt;Hugo&lt;/em&gt; to generate the blog skeleton. We can do that with the following command:&lt;/p&gt;
 
@@ -77,7 +77,7 @@ $ echo &amp;quot;theme = \&amp;quot;heather-hugo\&amp;quot;&amp;quot; &amp;gt;&a
 
 &lt;p&gt;That&amp;rsquo;s it, we&amp;rsquo;ve made a blog!&lt;/p&gt;
 
-&lt;h2 id=&#34;writing-our-first-post:323399aa7f615d16192903ed2560cafe&#34;&gt;Writing our first post&lt;/h2&gt;
+&lt;h2 id=&#34;writing-our-first-post&#34;&gt;Writing our first post&lt;/h2&gt;
 
 &lt;p&gt;Now it&amp;rsquo;s time to write our first post. &lt;em&gt;Hugo&lt;/em&gt; offers a bunch of commands to generate skeletons. You can also have your own archetypes.
 Type the following command to generate a post:&lt;/p&gt;
@@ -153,7 +153,7 @@ To run the server execute the command &lt;code&gt;hugo server --watch --buildDra
 &lt;p&gt;Now open &lt;a href=&#34;http://localhost:1313/&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; on your browser and make some changes to &lt;code&gt;my-first-post.md&lt;/code&gt;.
 You&amp;rsquo;ll see how &lt;em&gt;Hugo&lt;/em&gt; compiles the changes and reloads your browser. Cool, isn&amp;rsquo;t it?&lt;/p&gt;
 
-&lt;h2 id=&#34;overriding-theme-defaults:323399aa7f615d16192903ed2560cafe&#34;&gt;Overriding theme defaults&lt;/h2&gt;
+&lt;h2 id=&#34;overriding-theme-defaults&#34;&gt;Overriding theme defaults&lt;/h2&gt;
 
 &lt;p&gt;We used the &lt;code&gt;heather-hugo&lt;/code&gt; theme for our blog, but we probably want to add our own touch to the site. We can easily override any static file defined
 in our theme by placing a copy inside our site&amp;rsquo;s root.&lt;/p&gt;
@@ -164,7 +164,7 @@ to see the changes you&amp;rsquo;ve made.&lt;/p&gt;
 
 &lt;p&gt;Just like this you can override any other parts of the theme. Awesome!&lt;/p&gt;
 
-&lt;h2 id=&#34;deploying-the-blog-to-github-pages:323399aa7f615d16192903ed2560cafe&#34;&gt;Deploying the blog to github pages&lt;/h2&gt;
+&lt;h2 id=&#34;deploying-the-blog-to-github-pages&#34;&gt;Deploying the blog to github pages&lt;/h2&gt;
 
 &lt;p&gt;We&amp;rsquo;ve made a very simple blog. Now we&amp;rsquo;ll publish the generated content as a github page.&lt;/p&gt;
 
@@ -205,7 +205,7 @@ $ git push --set-upstream origin source
 
 &lt;p&gt;Yay! now we have both our source and our site versioned!&lt;/p&gt;
 
-&lt;h2 id=&#34;automatic-deployment-with-travis:323399aa7f615d16192903ed2560cafe&#34;&gt;Automatic deployment with travis&lt;/h2&gt;
+&lt;h2 id=&#34;automatic-deployment-with-travis&#34;&gt;Automatic deployment with travis&lt;/h2&gt;
 
 &lt;p&gt;What we have is pretty good, but deploying the static site is a hell. We can do better.&lt;/p&gt;
 

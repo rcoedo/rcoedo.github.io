@@ -7,7 +7,7 @@
     <title>Deploy your blog to github pages automatically using Hugo and Travis &middot; Roman Coedo</title>
     <meta name="author" content="Roman Coedo">
     <meta name="description" content="Blog about technical stuff I find interesting.">
-    <meta name="generator" content="Hugo 0.16-DEV" />
+    <meta name="generator" content="Hugo 0.17-DEV" />
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -70,13 +70,13 @@ larger amount of requests per second than their dynamic counterpart.</p>
 <p>A blog usually fits the static site description perfectly. Just having a bunch of html, css and javascript files is an elegant and simple solution.
 But you may ask, won&rsquo;t be handling the content a mess?  It won&rsquo;t, I promise!</p>
 
-<h2 id="enter-static-site-generators:323399aa7f615d16192903ed2560cafe">Enter static site generators</h2>
+<h2 id="enter-static-site-generators">Enter static site generators</h2>
 
 <p>A static site generator is a tool that renders content into html, css and javascript. The content is usually written in markdown and contains
 some metadata like dates, title or categories. The workflow to make a new post is quite simple, just throw in a new markdown file in the right place,
 rebuild your site, and deploy it to your server.</p>
 
-<h2 id="hugo-as-our-static-blog-generator:323399aa7f615d16192903ed2560cafe"><em>Hugo</em> as our static blog generator</h2>
+<h2 id="hugo-as-our-static-blog-generator"><em>Hugo</em> as our static blog generator</h2>
 
 <p>After trying out some static site generators for this blog, I ended up with <a href="https://gohugo.io/"><em>Hugo</em></a>. <em>Hugo</em> is a really <strong>fast</strong>
 static site generator written in <em>golang</em>, and it&rsquo;s also a quite simple tool to get started with.</p>
@@ -84,7 +84,7 @@ static site generator written in <em>golang</em>, and it&rsquo;s also a quite si
 <p>If you use homebrew type <code>brew install hugo</code> to install it. You can find a more detailed guide about installing <em>Hugo</em>
 <a href="https://gohugo.io/overview/installing/" target="_blank">here</a>.</p>
 
-<h2 id="making-our-first-blog-with-hugo:323399aa7f615d16192903ed2560cafe">Making our first blog with <em>Hugo</em></h2>
+<h2 id="making-our-first-blog-with-hugo">Making our first blog with <em>Hugo</em></h2>
 
 <p>Ok, let&rsquo;s make a blog from scratch to get you introduced. First we need to tell <em>Hugo</em> to generate the blog skeleton. We can do that with the following command:</p>
 
@@ -120,7 +120,7 @@ $ echo &quot;theme = \&quot;heather-hugo\&quot;&quot; &gt;&gt; config.toml
 
 <p>That&rsquo;s it, we&rsquo;ve made a blog!</p>
 
-<h2 id="writing-our-first-post:323399aa7f615d16192903ed2560cafe">Writing our first post</h2>
+<h2 id="writing-our-first-post">Writing our first post</h2>
 
 <p>Now it&rsquo;s time to write our first post. <em>Hugo</em> offers a bunch of commands to generate skeletons. You can also have your own archetypes.
 Type the following command to generate a post:</p>
@@ -196,7 +196,7 @@ To run the server execute the command <code>hugo server --watch --buildDrafts</c
 <p>Now open <a href="http://localhost:1313/" target="_blank">localhost:1313</a> on your browser and make some changes to <code>my-first-post.md</code>.
 You&rsquo;ll see how <em>Hugo</em> compiles the changes and reloads your browser. Cool, isn&rsquo;t it?</p>
 
-<h2 id="overriding-theme-defaults:323399aa7f615d16192903ed2560cafe">Overriding theme defaults</h2>
+<h2 id="overriding-theme-defaults">Overriding theme defaults</h2>
 
 <p>We used the <code>heather-hugo</code> theme for our blog, but we probably want to add our own touch to the site. We can easily override any static file defined
 in our theme by placing a copy inside our site&rsquo;s root.</p>
@@ -207,7 +207,7 @@ to see the changes you&rsquo;ve made.</p>
 
 <p>Just like this you can override any other parts of the theme. Awesome!</p>
 
-<h2 id="deploying-the-blog-to-github-pages:323399aa7f615d16192903ed2560cafe">Deploying the blog to github pages</h2>
+<h2 id="deploying-the-blog-to-github-pages">Deploying the blog to github pages</h2>
 
 <p>We&rsquo;ve made a very simple blog. Now we&rsquo;ll publish the generated content as a github page.</p>
 
@@ -248,7 +248,7 @@ $ git push --set-upstream origin source
 
 <p>Yay! now we have both our source and our site versioned!</p>
 
-<h2 id="automatic-deployment-with-travis:323399aa7f615d16192903ed2560cafe">Automatic deployment with travis</h2>
+<h2 id="automatic-deployment-with-travis">Automatic deployment with travis</h2>
 
 <p>What we have is pretty good, but deploying the static site is a hell. We can do better.</p>
 
@@ -347,7 +347,7 @@ config file and adapt it to yours. Also check my deploy script <a href="https://
 		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
 		</section>
 
-		<section class="copyright">&copy; 2015 <a href="http://rcoedo.com/">Roman Coedo</a>. Released under the MIT license.</section>
+		<section class="copyright">&copy; 2016 <a href="http://rcoedo.com/">Roman Coedo</a>. Released under the MIT license.</section>
 	</div>
 </footer>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
