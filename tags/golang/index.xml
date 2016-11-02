@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on Roman Coedo</title>
-    <link>http://rcoedo.com/tags/golang/</link>
+    <link>http://rcoedo.com/tags/golang/index.xml</link>
     <description>Recent content in Golang on Roman Coedo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2015 08:43:51 +0100</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://rcoedo.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -240,6 +240,8 @@ config file and adapt it to yours. Also check my deploy script &lt;a href=&#34;h
 &lt;p&gt;Set these up, add a new post to your source branch, push it and check everything is working!&lt;/p&gt;
 
 &lt;p&gt;I hope you had fun with this article. If you have any questions, thoughts or feedback please contact me on &lt;a href=&#34;http://twitter.com/rcoedo&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit 02/Nov/2016&lt;/strong&gt; - Apparently travis install step for go projects is &lt;code&gt;go get ./...&lt;/code&gt; and it fails. Having a &lt;a href=&#34;https://github.com/rcoedo/rcoedo.github.io/blob/source/Makefile&#34;&gt;Makefile&lt;/a&gt; prevents this behaviour. You can find more information about it &lt;a href=&#34;https://docs.travis-ci.com/user/languages/go/&#34;&gt;here&lt;/a&gt;. Thanks @tolleiv!&lt;/p&gt;
 </description>
     </item>
     

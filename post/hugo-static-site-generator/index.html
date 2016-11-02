@@ -7,10 +7,13 @@
     <title>Deploy your blog to github pages automatically using Hugo and Travis &middot; Roman Coedo</title>
     <meta name="author" content="Roman Coedo">
     <meta name="description" content="Blog about technical stuff I find interesting.">
-    <meta name="generator" content="Hugo 0.17-DEV" />
+    <meta name="generator" content="Hugo 0.18-DEV" />
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
 
     <link rel="shortcut icon" href="http://rcoedo.com/img/favicon.ico">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
@@ -30,6 +33,7 @@
     .older-posts:hover, .newer-posts:hover {color: #c62310;}
 </style>
 </head>
+
 <body class="post-template">
 
     <header id="site-head">
@@ -284,6 +288,8 @@ config file and adapt it to yours. Also check my deploy script <a href="https://
 
 <p>I hope you had fun with this article. If you have any questions, thoughts or feedback please contact me on <a href="http://twitter.com/rcoedo" target="_blank">twitter</a>.</p>
 
+<p><strong>Edit 02/Nov/2016</strong> - Apparently travis install step for go projects is <code>go get ./...</code> and it fails. Having a <a href="https://github.com/rcoedo/rcoedo.github.io/blob/source/Makefile">Makefile</a> prevents this behaviour. You can find more information about it <a href="https://docs.travis-ci.com/user/languages/go/">here</a>. Thanks @tolleiv!</p>
+
 	        </section>
 
 	        <section class="post-tags" style="padding-bottom:60px;">
@@ -344,12 +350,14 @@ config file and adapt it to yours. Also check my deploy script <a href="https://
 		    
 		    <a href="//github.com/rcoedo" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
 		    
+		    
 		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
 		</section>
 
 		<section class="copyright">&copy; 2016 <a href="http://rcoedo.com/">Roman Coedo</a>. Released under the MIT license.</section>
 	</div>
 </footer>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="http://rcoedo.com/js/index.js"></script>
 <script src="http://rcoedo.com/js/smooth-scroll.min.js"></script>
@@ -364,6 +372,7 @@ config file and adapt it to yours. Also check my deploy script <a href="https://
     });
 </script>
 <script>hljs.initHighlightingOnLoad();</script>
+
 
 
 
