@@ -216,3 +216,4 @@ Set these up, add a new post to your source branch, push it and check everything
 
 I hope you had fun with this article. If you have any questions, thoughts or feedback please contact me on <a href="http://twitter.com/rcoedo" target="_blank">twitter</a>.
 
+**Edit 02/Nov/2016** - Apparently travis install step for go projects is `go get ./...` and it fails. Having a <a href="https://github.com/rcoedo/rcoedo.github.io/blob/source/Makefile">Makefile</a> prevents this behaviour. You can find more information about it <a href="https://docs.travis-ci.com/user/languages/go/">here</a>. Thanks @tolleiv!
