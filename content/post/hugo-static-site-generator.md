@@ -159,7 +159,7 @@ $ git clone git@github.com:<username>/<username>.github.io.git
 $ cp -r public/* <username>.github.io/
 $ cd <username>.github.io
 $ git add --all
-$ git commit -m'First commit'
+$ git commit -m 'First commit'
 $ git push
 ```
 You'll be able to find your new blog in <a href="#">\<username\>.github.io</a>.
