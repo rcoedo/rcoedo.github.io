@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://rcoedo.com/</loc>
-    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rcoedo.com/post/hugo-static-site-generator/</loc>
     <lastmod>2015-12-03T08:43:51+01:00</lastmod>
   </url>
@@ -14,6 +9,65 @@
   <url>
     <loc>http://rcoedo.com/about-me/</loc>
     <lastmod>2015-12-03T08:25:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/tags/blog/</loc>
+    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/tags/golang/</loc>
+    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/categories/golang/</loc>
+    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/tags/hugo/</loc>
+    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/categories/other/</loc>
+    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/post/</loc>
+    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/</loc>
+    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/tags/static-site/</loc>
+    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rcoedo.com/tags/</loc>
+    <lastmod>2015-12-03T08:43:51+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

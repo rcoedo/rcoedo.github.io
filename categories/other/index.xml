@@ -181,7 +181,7 @@ $ git clone git@github.com:&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.git
 $ cp -r public/* &amp;lt;username&amp;gt;.github.io/
 $ cd &amp;lt;username&amp;gt;.github.io
 $ git add --all
-$ git commit -m&#39;First commit&#39;
+$ git commit -m &#39;First commit&#39;
 $ git push
 &lt;/code&gt;&lt;/pre&gt;
 

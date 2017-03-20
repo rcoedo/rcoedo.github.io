@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Roman Coedo</title>
+    <link>http://rcoedo.com/categories/index.xml</link>
+    <description>Recent content in Categories on Roman Coedo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license.</copyright>
+    <atom:link href="http://rcoedo.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Golang</title>
+      <link>http://rcoedo.com/categories/golang/</link>
+      <pubDate>Thu, 03 Dec 2015 08:43:51 +0100</pubDate>
+      
+      <guid>http://rcoedo.com/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>http://rcoedo.com/categories/other/</link>
+      <pubDate>Thu, 03 Dec 2015 08:43:51 +0100</pubDate>
+      
+      <guid>http://rcoedo.com/categories/other/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
