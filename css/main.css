@@ -1,0 +1,302 @@
+/* ============================================
+     GLOBAL SETTINGS
+   ============================================ */
+:root {
+  --white: rgb(255, 255, 255);
+  --gray-light: rgb(242, 242, 242);
+  --gray: rgb(222, 222, 222);
+  --gray-dark: rgb(200, 200, 200);
+  --black: rgb(0, 0, 0);
+  --black-light: rgb(40, 40, 40);
+  --black-lighter: rgb(100, 100, 100);
+  /* --blue: rgb(107, 218, 253); */
+  --blue: rgb(155, 230, 253);
+  --blue-dark: rgb(3, 155, 201);
+  --red: rgb(248, 137, 141);
+  --red-dark: rgb(226, 26, 66);
+  --orange: rgb(255, 124, 46);
+  --yellow: rgb(255, 211, 48);
+  --green: rgb(171, 255, 50);
+  --green-light: rgb(239, 252, 236);
+  --green-lighter: rgb(249, 254, 247);
+
+  --content-max-width: 1000px;
+
+  --border: 2px solid;
+  --border-radius: 5px;
+
+  --flex-direction: column;
+  --article-date-separator: '';
+  --tx-footer-flex-separator-border: var(--base-border);
+}
+
+/* === XS === */
+/* @media screen and (min-width: 320px) { */
+/*   :root { */
+/*   } */
+/* } */
+
+/* === SM === */
+@media screen and (min-width: 768px) {
+  :root {
+    --flex-direction: row;
+    --article-date-separator: '-';
+    --tx-footer-flex-separator-border: 0;
+  }
+}
+
+/* === LG === */
+/* @media screen and (min-width: 1200px) { */
+/*   :root { */
+/*   } */
+/* } */
+
+/* === XLG === */
+/* @media screen and (min-width: 1920px) { */
+/*   :root { */
+/*   } */
+/* } */
+
+html {
+  font-family: monospace, monospace;
+  font-size: 16px;
+}
+
+/***************************
+ General styles
+****************************/
+*:focus {
+  outline-color: var(--yellow);
+}
+
+/* === links === */
+a {
+  color: var(--black);
+  background: linear-gradient(to bottom, var(--blue) 0%, var(--blue) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 30%;
+  transition: background-size 0.1s;
+  text-decoration: none;
+}
+
+a.green {
+  background: linear-gradient(to bottom, var(--green) 0%, var(--green) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 30%;
+}
+
+a.yellow {
+  background: linear-gradient(to bottom, var(--yellow) 0%, var(--yellow) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 30%;
+}
+
+a.red {
+  background: linear-gradient(to bottom, var(--red) 0%, var(--red) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 30%;
+}
+
+a:hover {
+  background-size: 1px 100%;
+}
+
+a.no-transition:hover {
+  background-size: 1px 30%;
+}
+
+/* === headers === */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+/* === paragraphs === */
+p {
+  line-height: 1.4em;
+}
+
+/* === section === */
+section > * + * {
+  margin-top: 1em;
+}
+
+/* === code === */
+pre {
+  padding: 1em;
+  font-size: 0.9em;
+  white-space: pre-wrap;
+}
+
+/* === highlight === */
+div.highlighter-rouge {
+  background-clip: border-box;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: 4px 4px 0px -1px var(--blue-dark);
+}
+
+code.highlighter-rouge::after {
+  content: '';
+  background-color: var(--yellow);
+  transform: skew(-15deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+code.highlighter-rouge {
+  position: relative;
+}
+
+/***************************
+ Layout styles
+****************************/
+body {
+  color: var(--black);
+  background: var(--white);
+  display: grid;
+  grid-gap: 10px;
+  grid-template:
+    'hd nv' auto
+    'content content' 1fr
+    'ft ft' auto;
+  min-height: 100vh;
+}
+
+body > header {
+  grid-area: hd;
+  padding: 1em;
+  display: flex;
+  gap: 20px;
+  font-size: 1.5em;
+}
+
+body > nav {
+  grid-area: nv;
+  padding: 1em;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+
+body > main {
+  grid-area: content;
+  margin: 1em auto;
+  max-width: var(--content-max-width);
+  width: 100%;
+}
+
+body > main > * {
+  padding: 1em 2em;
+}
+
+body > main > * + * {
+  margin-top: 3em;
+}
+
+body > footer {
+  grid-area: ft;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1em;
+}
+
+/***************************
+ Classes
+****************************/
+/* === general === */
+.hl-yellow {
+  background-color: var(--yellow);
+}
+
+.dialog {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: var(--black-lighter);
+  background-color: var(--gray-light);
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+/* === intro === */
+.intro h1 {
+  text-align: center;
+}
+
+.intro p {
+  text-align: justify;
+}
+
+/* === latest articles === */
+.latest-articles h1 {
+  text-align: center;
+}
+
+.latest-articles ul {
+  text-align: center;
+}
+
+.latest-articles ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: var(--flex-direction);
+  gap: 0.5em;
+}
+
+.latest-articles ul li + li {
+  margin-top: 1.5em;
+}
+
+.latest-articles ul li > * + *::before {
+  content: var(--article-date-separator);
+}
+
+.latest-articles span.date {
+  color: var(--black-lighter);
+}
+
+/* === post === */
+.post > * + * {
+  margin-top: 1em;
+}
+.post header {
+  color: var(--black-lighter);
+}
+
+.post h1 {
+  padding-top: 0;
+  text-decoration: underline;
+}
+
+.post h2,
+.post h3 {
+  font-weight: bold;
+}
+
+.post header {
+}
+
+.post footer {
+  margin: 1.5em;
+}
+
+.post p {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
