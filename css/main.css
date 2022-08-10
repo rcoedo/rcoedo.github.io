@@ -28,6 +28,7 @@
   --flex-direction: column;
   --article-date-separator: '';
   --tx-footer-flex-separator-border: var(--base-border);
+  --font-size: 14px;
 }
 
 /* === XS === */
@@ -42,6 +43,7 @@
     --flex-direction: row;
     --article-date-separator: '-';
     --tx-footer-flex-separator-border: 0;
+    --font-size: 16px;
   }
 }
 
@@ -59,7 +61,7 @@
 
 html {
   font-family: monospace, monospace;
-  font-size: 16px;
+  font-size: var(--font-size);
 }
 
 /***************************
@@ -136,7 +138,10 @@ section > * + * {
 pre {
   padding: 1em;
   font-size: 0.9em;
-  white-space: pre-wrap;
+  line-height: 1.2em;
+  scrollbar-color: dark;
+  color-scheme: dark;
+  overflow-x: auto;
 }
 
 /* === highlight === */
@@ -169,41 +174,36 @@ code.highlighter-rouge {
 body {
   color: var(--black);
   background: var(--white);
-  display: grid;
-  grid-gap: 10px;
-  grid-template:
-    'hd nv' auto
-    'content content' 1fr
-    'ft ft' auto;
-  min-height: 100vh;
+  max-width: var(--content-max-width);
+  padding: 0 1.5em;
+  margin: auto;
+}
+
+body > * {
+  margin-top: 2em;
 }
 
 body > header {
-  grid-area: hd;
-  padding: 1em;
   display: flex;
+  flex-direction: var(--flex-direction);
+  justify-content: space-between;
   gap: 20px;
   font-size: 1.5em;
 }
 
-body > nav {
-  grid-area: nv;
-  padding: 1em;
+body > header > nav {
   display: flex;
   gap: 20px;
   justify-content: flex-end;
-  font-size: 1.5rem;
+  justify-content: flex-start;
 }
 
 body > main {
-  grid-area: content;
-  margin: 1em auto;
-  max-width: var(--content-max-width);
   width: 100%;
 }
 
 body > main > * {
-  padding: 1em 2em;
+  padding: 1em 0;
 }
 
 body > main > * + * {
@@ -211,7 +211,6 @@ body > main > * + * {
 }
 
 body > footer {
-  grid-area: ft;
   font-size: 0.8rem;
   text-align: center;
   padding: 1em;
