@@ -8,7 +8,7 @@ In the last few years, gRPC has been gaining much traction. In this post, we wil
 
 This post will assume no previous gRPC experience, so if you haven't had the time to check what gRPC is about, keep reading!
 
-## What is gRPC?
+### What is gRPC?
 gRPC is a new take on the RPC paradigm to build APIs that recalls the old SOAP protocol. gRPC and SOAP are similar in that both use a contract that both client and service agree upon. However, gRPC handles reasonably well the known [SOAP weaknesses](https://en.wikipedia.org/wiki/SOAP#Technical_critique) while maintaining its strengths.
 
 Instead of XML, gRPC serializes the messages using [Protocol Buffers](https://developers.google.com/protocol-buffers) (AKA protobuf), a Google algorithm to serialize structured data into binary. After being serialized, the data is sent over HTTP/2.
@@ -216,7 +216,7 @@ app.start("0.0.0.0:50051");
 
 That's it! Now, if we make a `GreetMe` call, we will get a nice log message.
 
-### Wrapping it up
+## Wrapping it up
 We've skimmed through the basics of gRPC, and we've built the most straightforward possible service using grpc-node and Mali.
 
 The Mali version is much more extensible, and the middleware concept is a powerful abstraction that fits really well here.

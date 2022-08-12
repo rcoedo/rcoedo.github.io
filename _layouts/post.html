@@ -3,9 +3,11 @@ layout: default
 ---
 
 <article class="post">
-  <header>written on {{ page.date | date_to_string }}</header>
-  <section>
+  <header>
+    <div class="date">written on {{ page.date | date_to_string }}</div>
     <h1>{{ page.title }}</h1>
+  </header>
+  <section>
     {{ content }}
   </section>
   <footer>
