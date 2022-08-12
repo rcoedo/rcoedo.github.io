@@ -62,6 +62,14 @@
 html {
   font-family: 'Fira Code', monospace;
   font-size: var(--font-size);
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 @supports (font-variation-settings: normal) {
@@ -130,9 +138,11 @@ h3 {
   font-size: 1.25em;
 }
 
-/* === paragraphs === */
-p {
-  line-height: 1.4em;
+/* === images === */
+img {
+  border-radius: var(--border-radius);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
 }
 
 /* === section === */
@@ -144,7 +154,6 @@ section > * + * {
 pre {
   padding: 1em;
   font-size: 0.9em;
-  line-height: 1.2em;
   scrollbar-color: dark;
   color-scheme: dark;
   overflow-x: auto;
@@ -153,7 +162,7 @@ pre {
 /* === highlight === */
 div.highlighter-rouge {
   background-clip: border-box;
-  border: var(--border) var(--blue-darker);
+  border: var(--border) var(--black-light);
   border-radius: var(--border-radius);
   box-shadow: 4px 4px 0px -1px var(--blue-darker);
 }
@@ -182,7 +191,11 @@ body {
   background: var(--white);
   max-width: var(--content-max-width);
   padding: 0 1.5em;
+  line-height: 1.4;
   margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 body > * {
@@ -191,7 +204,6 @@ body > * {
 
 body > header {
   display: flex;
-  flex-direction: var(--flex-direction);
   justify-content: space-between;
   gap: 20px;
   font-size: 1.5em;
@@ -201,11 +213,11 @@ body > header > nav {
   display: flex;
   gap: 20px;
   justify-content: flex-end;
-  justify-content: flex-start;
 }
 
 body > main {
   width: 100%;
+  flex: 1 0 auto;
 }
 
 body > main > * {
@@ -220,6 +232,7 @@ body > footer {
   font-size: 0.8rem;
   text-align: center;
   padding: 1em;
+  flex-shrink: 0;
 }
 
 /***************************
@@ -244,36 +257,63 @@ body > footer {
   text-align: center;
 }
 
-.intro p {
-  text-align: justify;
-}
-
-/* === latest articles === */
-.latest-articles h1 {
+/* === latest posts === */
+.latest-posts h1 {
   text-align: center;
 }
 
-.latest-articles ul {
-  text-align: center;
+.latest-posts ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 2em;
+  justify-content: space-evenly;
 }
 
-.latest-articles ul li {
+.post-card {
+  background: none;
+  position: relative;
   display: flex;
-  justify-content: center;
-  flex-direction: var(--flex-direction);
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 225px;
+  width: 350px;
   gap: 0.5em;
 }
 
-.latest-articles ul li + li {
-  margin-top: 1.5em;
+.post-card footer {
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  padding: 0.5em;
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
 }
 
-.latest-articles ul li > * + *::before {
-  content: var(--article-date-separator);
+.post-card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
-.latest-articles span.date {
-  color: var(--black-lighter);
+.post-card img {
+  position: absolute;
+  z-index: -1;
+}
+
+.post-card .title {
+  font-size: 1em;
+  flex-grow: 2;
+  max-height: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.post-card .date {
+  font-size: 0.7em;
+  color: var(--yellow);
 }
 
 /* === post === */
@@ -318,4 +358,8 @@ body > footer {
 .post p {
   word-break: break-word;
   overflow-wrap: break-word;
+}
+
+.post img {
+  margin-top: 1em;
 }

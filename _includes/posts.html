@@ -1,14 +1,14 @@
-<section class="latest-articles">
-  <h1>latest articles</h1>
+<section class="latest-posts">
   <ul>
     {% for post in site.posts limit: include.limit %}
     <li>
-      <div>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      </div>
-      <div>
-        <span class="date">{{ post.date | date_to_string }}</span>
-      </div>
+      <a class="post-card" href="{{ post.url }}" title="{{ post.title }}">
+        <img src="/resources/images/{{ post.image }}" />
+        <footer>
+          <div class="title">{{ post.title }}</div>
+          <div class="date">{{ post.date | date_to_string }}</div>
+        </footer>
+      </a>
     </li>
     {% endfor %}
   </ul>

@@ -6,6 +6,9 @@ layout: default
   <header>
     <div class="date">written on {{ page.date | date_to_string }}</div>
     <h1>{{ page.title }}</h1>
+    {% if page.image %}
+    <img src="/resources/images/{{ page.image }}">
+    {% endif %}
   </header>
   <section>
     {{ content }}
