@@ -2,7 +2,7 @@
 layout: post
 title: Render Components Elsewhere with react-conduit
 date: 2018-01-08
-image: cyberpunk-pipes.jpg
+image: render-components-elsewhere-with-react-conduit.jpg
 footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
