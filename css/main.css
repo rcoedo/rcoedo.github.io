@@ -258,6 +258,7 @@ body > footer {
   color: var(--black-lighter);
   background-color: var(--gray-light);
   padding: 1em;
+  margin: 2.5em 0;
   font-size: 0.9em;
 }
 
