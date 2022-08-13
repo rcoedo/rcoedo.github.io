@@ -1,8 +1,8 @@
 ---
 layout: post
+resources: node-js-grpc-services-in-style
 title: Node.js gRPC Services in Style
 date: 2019-01-18
-image: node-js-grpc-services-in-style.jpg
 footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/node-js-grpc-services-in-style-222389be991a), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 

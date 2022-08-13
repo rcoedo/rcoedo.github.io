@@ -1,8 +1,8 @@
 ---
 layout: post
+resources: continuation-local-storage-for-easy-context-passing-in-node-js
 title: Continuation Local Storage for easy context passing in Node.js
 date: 2019-11-14
-image: continuation-local-storage-for-easy-context-passing-in-node-js.jpg
 footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 

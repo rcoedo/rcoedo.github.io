@@ -3,7 +3,7 @@
     {% for post in site.posts limit: include.limit %}
     <li>
       <a class="post-card" href="{{ post.url }}" title="{{ post.title }}">
-        <img src="/resources/images/{{ post.image }}" />
+        <img src="/resources/images/{{ post.resources }}/card.jpg" />
         <footer>
           <div class="title">{{ post.title }}</div>
           <div class="date">{{ post.date | date_to_string }}</div>
