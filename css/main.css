@@ -138,6 +138,14 @@ h3 {
   font-size: 1.25em;
 }
 
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
 /* === images === */
 img {
   border-radius: var(--border-radius);
@@ -165,6 +173,7 @@ div.highlighter-rouge {
   border: var(--border) var(--black-light);
   border-radius: var(--border-radius);
   box-shadow: 4px 4px 0px -1px var(--blue-darker);
+  margin: 1.5em 0;
 }
 
 code.highlighter-rouge::after {
