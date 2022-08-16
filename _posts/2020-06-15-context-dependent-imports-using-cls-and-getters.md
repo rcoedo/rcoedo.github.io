@@ -3,7 +3,7 @@ layout: post
 resources: context-dependent-imports-using-cls-and-getters
 title: Context-Dependent Imports Using CLS and Getters
 date: 2020-06-15
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 As I was reading an article about [exporting getters in CommonJS](https://medium.com/trabe/exporting-getters-in-commonjs-modules-dd8f98b7d85e) from my colleague [David Barral](https://medium.com/@david.barral) the other day, I realized we could use this approach to export dynamically from a CLS context.

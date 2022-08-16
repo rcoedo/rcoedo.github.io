@@ -3,7 +3,7 @@ layout: post
 resources: render-components-elsewhere-with-react-conduit
 title: Render Components Elsewhere with react-conduit
 date: 2018-01-08
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 React 16 has brought us [React Portals](https://reactjs.org/docs/portals.html); however, these still require us to deal with DOM elements ourselves. Today we are presenting [react-conduit](https://github.com/trabe/react-conduit), another way of rendering components outside a component's hierarchy.

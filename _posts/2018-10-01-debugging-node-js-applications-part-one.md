@@ -3,7 +3,7 @@ layout: post
 resources: debugging-node-js-applications-part-one
 title: Debugging Node.js Applications, Part One.
 date: 2018-10-01
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 As developers, we frequently spend a hefty amount of time debugging. This is why knowing how to properly debug our code is crucial if we want to be productive.

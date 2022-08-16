@@ -3,7 +3,7 @@ layout: post
 resources: dir-aliases-with-the-fish-shell
 title: Dir Aliases with the Fish Shell
 date: 2018-07-02
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 My memory is terrible. I usually have a hard time remembering long commands and their parameters. For this reason, I constantly define many aliases in my shell environment, which I also end up forgetting.

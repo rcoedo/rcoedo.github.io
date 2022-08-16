@@ -3,7 +3,7 @@ layout: post
 resources: map-subdomains-to-docker-containers-with-traefik
 title: Map Subdomains to Docker Containers with Traefik
 date: 2020-02-24
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 I run a server at home where I host some services for myself. I run a calibre-web instance, a transmission instance, and a plex server, among others.

@@ -3,7 +3,7 @@ layout: post
 resources: tracing-express-services-with-zipkin-js
 title: Tracing Express Services with zipkin-js
 date: 2019-07-08
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 # Tracing Express Services with zipkin-js

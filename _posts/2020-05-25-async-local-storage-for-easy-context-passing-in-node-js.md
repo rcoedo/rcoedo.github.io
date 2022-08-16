@@ -3,7 +3,7 @@ layout: post
 resources: async-local-storage-for-easy-context-passing-in-node-js
 title: AsyncLocalStorage for Easy Context Passing in Node.js
 date: 2020-05-25
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 Some months ago, I wrote a post about [storing data in an asynchronous context using continuation local storage](https://rcoedo.com/blog/2019/11/14/continuation-local-storage-for-easy-context-passing-in-node-js) to avoid spreading the request context to every function via parameters. For this purpose, we used `cls-hooked,` a library that implements CLS using the `async_hooks` node API.

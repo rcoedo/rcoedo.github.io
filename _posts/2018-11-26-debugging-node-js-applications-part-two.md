@@ -3,7 +3,7 @@ layout: post
 resources: debugging-node-js-applications-part-two
 title: Debugging Node.js Applications, Part Two.
 date: 2018-11-26
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 In the first part of this series, we learned how debuggers work and how to attach our debugging client to our code. In this post, we will cover the basic features of the Chrome debugger.

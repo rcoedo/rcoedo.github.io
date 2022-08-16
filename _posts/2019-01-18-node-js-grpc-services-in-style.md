@@ -3,7 +3,7 @@ layout: post
 resources: node-js-grpc-services-in-style
 title: Node.js gRPC Services in Style
 date: 2019-01-18
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/node-js-grpc-services-in-style-222389be991a), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 In the last few years, gRPC has been gaining much traction. In this post, we will cover the basics of gRPC and jump right into building a Greeter service with [grpc-node](https://github.com/grpc/grpc-node). After that, we're going to rewrite it using [Mali](https://mali.js.org/).

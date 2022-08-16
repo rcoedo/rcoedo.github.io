@@ -3,7 +3,7 @@ layout: post
 resources: continuation-local-storage-for-easy-context-passing-in-node-js
 title: Continuation Local Storage for easy context passing in Node.js
 date: 2019-11-14
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 Recently I've been working on a Node.js project where we needed to keep track of which requests were generating calls to some other pieces of code. Passing a request identifier around was not viable since it would require changing too many APIs.

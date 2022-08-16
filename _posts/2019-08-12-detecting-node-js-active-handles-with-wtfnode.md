@@ -3,7 +3,7 @@ layout: post
 resources: detecting-node-js-active-handles-with-wtfnode
 title: Detecting Node.js Active Handles with wtfnode
 date: 2019-08-12
-footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe/continuation-local-storage-for-easy-context-passing-in-node-js-2461c2120284), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
+footer_content: This article was [originally written for the Trabe medium publication](https://medium.com/trabe), a collection of excellent articles written by [the awesome people from trabe.io](https://trabe.io/).
 ---
 
 Not long ago, I was running some tests for a Node.js project, and for some reason, they ran forever. Something was preventing the process from terminating. It took me some time to realize that it was an interval not being correctly cleared, but I learned a lot in the debugging process.
