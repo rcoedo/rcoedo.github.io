@@ -132,7 +132,7 @@ module.exports = server;
 
 We create a new server and invoke the `repl` function passing the socket. The `repl` function starts a new REPL and handles the socket events:
 
-```
+```js
   console.log("repl client connected");
   sayWelcome(socket);
 

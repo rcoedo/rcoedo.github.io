@@ -150,7 +150,6 @@ strong {
 img {
   border-radius: var(--border-radius);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.75);
-  width: 100%;
 }
 
 /* === section === */
@@ -309,6 +308,7 @@ body > footer {
 }
 
 .post-card img {
+  width: 100%;
   position: absolute;
   z-index: -1;
 }
@@ -358,9 +358,6 @@ body > footer {
   font-size: 1.5em;
 }
 
-.post header {
-}
-
 .post footer {
   margin: 1.5em;
 }
@@ -370,8 +367,15 @@ body > footer {
   overflow-wrap: break-word;
 }
 
-.post img {
+.post header img {
+  width: 100%;
   margin-top: 1em;
+}
+
+.post section img {
+  max-width: 100%;
+  display: block;
+  margin: 2em auto;
 }
 
 .post ul {
