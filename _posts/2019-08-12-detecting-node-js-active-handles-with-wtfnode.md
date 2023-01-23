@@ -40,13 +40,13 @@ setTimeout(() => {
   console.log("Look mom, I'm inside a timeout!");
 }, 1000);
 
-console.log('-------------------');
-console.log('handles:', process._getActiveHandles());
-console.log('requests:', process._getActiveRequests());
-console.log('-------------------\n');
+console.log("-------------------");
+console.log("handles:", process._getActiveHandles());
+console.log("requests:", process._getActiveRequests());
+console.log("-------------------\n");
 ```
 
-If you are curious, [here is the output of the this snippet](https://gist.github.com/rcoedo/bef1a5e8d4fd430470acdb59aea1b427).
+If you are curious, [here is the output of the this snippet](https://gist.github.com/rcoedo/52856b224497304cc7bd95d7903100f7#file-get-active-handles-output-js).
 
 <div class="dialog">Since Node.js@11 timers are not included in the result of getActiveHandles. More info on <a href="https://github.com/nodejs/node/issues/25806">this github issue</a>.</div>
 
@@ -57,21 +57,21 @@ If you are curious, [here is the output of the this snippet](https://gist.github
 The usage is relatively simple:
 
 ```js
-const wtf = require('wtfnode');
+const wtf = require("wtfnode");
 
-console.log('First dump');
-console.log('-------------------');
+console.log("First dump");
+console.log("-------------------");
 wtf.dump();
-console.log('-------------------\n');
+console.log("-------------------\n");
 
 setTimeout(() => {
   console.log("Look mom, I'm inside a timeout!");
 }, 1000);
 
-console.log('Second dump');
-console.log('-------------------');
+console.log("Second dump");
+console.log("-------------------");
 wtf.dump();
-console.log('-------------------\n');
+console.log("-------------------\n");
 ```
 
 The dump function will output something like this:
